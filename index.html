@@ -59,7 +59,7 @@
       <!--Герой-->
       <section class="hero">
         <h1 class="hero-title">Эффективные решения<br />для вашего бизнеса</h1>
-        <button class="hero-btn" type="button">Заказать услугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
       </section>
       <!--Наши преимущества-->
       <section class="section">
@@ -118,14 +118,17 @@
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list flex-container">
-            <li class="flex-element">
+            <li class="flex-element list-example">
               <img src="./images/box-1.jpg" alt="Пример работы 1" width="370" height="294" />
+              <p class="example">Десктопные приложения</p>
             </li>
-            <li class="flex-element">
+            <li class="flex-element list-example">
               <img src="./images/box-2.jpg" alt="Пример работы 2" width="370" height="294" />
+              <p class="example">Мобильные приложения</p>
             </li>
-            <li class="flex-element">
+            <li class="flex-element list-example">
               <img src="./images/box-3.jpg" alt="Пример работы 3" width="370" height="294" />
+              <p class="example">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -531,5 +534,19 @@
         </div>
       </div>
     </footer>
+    <!-- modal window start-->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="close-modal" height="18px" width="18px">
+            <use href="./images/symbol-defs.svg#close-icon"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- modal window end-->
+    <!-- JS start-->
+    <script src="./js/modal.js"></script>
+    <!-- JS end-->
   </body>
 </html>
